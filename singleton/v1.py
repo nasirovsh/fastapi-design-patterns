@@ -1,5 +1,6 @@
 from fastapi import FastAPI
 
+
 class Database:
     instance = None
 
@@ -12,9 +13,11 @@ class Database:
         # Connect to the database
         pass
 
+
 db = Database()
 
 app = FastAPI()
+
 
 @app.get("/users/{user_id}")
 def get_user(user_id: int):
